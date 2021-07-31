@@ -17,18 +17,10 @@ let botonRespuestaIncorrecta1 = () => {
   respuestaBotonCorrecta.style.backgroundColor = "green"
   respuestaTexto.textContent = "¡Respuesta incorrecta!"
   respuestaBotonCorrecta.disabled = true;
-  respuestaBotonIncorrecta2.disabled = true;
-}
-
-let botonRespuestaIncorrecta2 = () => {
-  respuestaBotonIncorrecta2.style.backgroundColor = "red"
-  respuestaBotonIncorrecta1.style.backgroundColor = "red"
-  respuestaBotonCorrecta.style.backgroundColor = "green"
-  respuestaTexto.textContent = "¡Respuesta incorrecta!"
-  respuestaBotonCorrecta.disabled = true;
+  respuestaBotonIncorrecta2.disabled = true;  
   respuestaBotonIncorrecta1.disabled = true;
 }
 
 respuestaBotonCorrecta.onclick = botonRespuestaCorrecta
 respuestaBotonIncorrecta1.onclick = botonRespuestaIncorrecta1
-respuestaBotonIncorrecta2.onclick = botonRespuestaIncorrecta2
+respuestaBotonIncorrecta2.onclick = botonRespuestaIncorrecta1
